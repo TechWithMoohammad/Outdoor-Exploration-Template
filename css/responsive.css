@@ -1,0 +1,200 @@
+/* RESPONSIVE DESIGN */
+
+@media (max-width:768px){
+
+    /* HEADER */
+
+    .header__inner{
+        justify-content: space-between;
+    }
+    .header__menu{
+        display: inline!important;
+        z-index: 3;
+        margin-left: 10px;
+    }
+    .header__nav{
+        align-items: center;
+        display: flex;
+        position: absolute;
+        top: 0;
+        height: 100vh;
+        width: 50%;
+        background-color: rgb(179, 182, 12);
+        left: 0;
+        align-items: center;
+        justify-content: center;
+        z-index: 2;
+        transition: left 1.5s ease-in-out;
+    }
+    .close{
+        left: -100%;
+    }
+    .open{
+        left: 0;
+    }
+    .header__ul{
+        gap: 30px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* OUTDOOR */
+
+    .outdoor__inner{
+        width: 90%;
+        margin-right:auto;
+        margin-left: auto;
+    }
+    .outdoor__h3, .outdoor__p, .outdoor__h2{
+        text-align: center;
+    }
+    /* WHO */
+    .who__inner, .two_column{
+        flex-direction: column;
+        align-items: center;
+    }
+    .who__img, .two_column_img{
+        margin-left: 0;
+        width: 90%;
+    }
+    .two_column_div, .who__div{
+        width: 90%;
+        margin-top: 30px;
+        text-align: center;
+    }
+    .who__p, .two_column_p{
+        margin-bottom: 25px;
+    }
+    .who__a{
+        display: block;
+    }
+    .who__h2,.who__h3,.who__a{
+        text-align: center;
+    }
+
+    /* PROMISE */
+
+    .card{
+        width: 45%;
+    }
+    .promise__p{
+        width: 90%;
+    }
+
+    /* SURFERS */
+
+    .surfers__div{
+        width: 80%;
+    }
+
+    /* SHOP */
+
+    .shop__inner{
+        width: 90%;
+    }
+
+    /* FAMILY */
+
+    .family__p{
+        width: 90%;
+    }
+
+    /* GUIDES */
+
+    .guides__h2,.guides__h3,.guides__p{
+        text-align: center;    
+    }
+    .guides__p{
+        margin-top: 10px;
+        width: 90%;
+    }
+    .guides__div-container{
+        flex-direction: column;
+        align-items: center;
+    }
+    .guides__div{
+        width: 80%;
+    }
+    .guides__h4{
+        text-align: center;    
+    }
+    .guides__mini-div{
+        align-items: center;
+        flex-direction: column;
+    }
+
+    /* READING */
+
+    .reading__h2,.reading__h3,.reading__p{
+        text-align: center;
+    }
+
+    /* FOOTER */
+
+    .footer__div_1{
+        flex-direction: column;
+    }
+    .footer__h2,.footer__ul,.footer__p,.footer__li{
+        text-align: center;
+    }
+    .footer__form{
+        width: 90%;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+    .footer__div_2{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* RESPONSIVE DESIGN (425px) */
+
+@media(max-width:425px){
+
+    /* OUTDOOR */
+
+    .outdoor__h3{
+        font-size: 40px;
+    }
+
+    /* SURFERS */
+
+    .surfers{
+        display: none;
+    }
+
+    /* PROMISE */
+
+    .promise__card,.family__card{
+        justify-content: center;
+    }
+    .card{
+        width: 90%;
+    }
+}
+
+/* RESPONSIVE DESIGN (320px) */
+
+@media (max-width:320px){
+    
+    /* SHOP */
+
+    .shop__a{
+        width: 33%;
+        font-size: 13px;
+        padding: 8px;
+    }
+
+    /* FOOTER */
+
+    .footer__p{
+        font-size: 12px;
+    }
+    .button:nth-child(3){
+        width: 30%;
+    }
+}
